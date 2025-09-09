@@ -177,7 +177,7 @@ const displayAllCategories = (categories) => {
     const allTrees = document.createElement("li");
     allTrees.innerHTML = `
         <a href="#" id="all-trees-btn" 
-           class="categories-btn p-1 block w-full bg-[#15803D] text-white rounded hover:text-white hover:bg-[#166534] transition-all duration-300 ease-in-out">
+           class="categories-btn p-1 block w-full bg-[#15803D] text-white rounded hover:text-white hover:bg-[#15803D] transition-all duration-300 ease-in-out">
            All Trees
         </a>
     `;
@@ -190,7 +190,7 @@ const displayAllCategories = (categories) => {
     categories.forEach(categorie => {
         const li = document.createElement("li");
         li.innerHTML = `
-            <a href="#" onclick="loadButtonId(${categorie.id})" class="categories-btn p-1 block w-full hover:text-white hover:bg-[#15803D] transition-all duration-300 ease-in-out">${categorie.category_name}</a>
+            <a href="#" onclick="loadButtonId(${categorie.id})" class="categories-btn rounded p-1 block w-full hover:text-white hover:bg-[#15803D] transition-all duration-300 ease-in-out">${categorie.category_name}</a>
         `;
         categoriesContainer.appendChild(li);
     });
