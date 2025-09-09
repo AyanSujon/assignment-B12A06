@@ -9,7 +9,6 @@ const loadingSpinner = (status) => {
     }
 };
 
-
 // Load categories from API
 const loadAllCategories = () => {
     fetch("https://openapi.programming-hero.com/api/categories")
@@ -38,7 +37,6 @@ const loadButtonId = (id) => {
         });
 };
 
-
 // Load card Details by Modal 
 const loadCardDetail = (id) => {
     const url = `https://openapi.programming-hero.com/api/plant/${id}`;
@@ -55,7 +53,6 @@ const loadAddToCardDetail = (id) => {
         .then(details => displayAddToCardDetail(details.plants))
         .catch(err => console.error("Error loading card detail:", err));
 };
-
 
 // Function to handle Add to Cart
 const displayAddToCardDetail = (product) => {
@@ -74,11 +71,9 @@ const displayAddToCardDetail = (product) => {
     renderCart();
 }
 
-
 // Render cart items in the UI
 function renderCart() {
     const cartContainer = document.querySelector(".your-cart");
-
 
     // Loop through cart items and display
     cart.forEach(item => {
@@ -106,7 +101,6 @@ function removeFromCart(id) {
     renderCart();
 }
 
-
 // Display card details with Modal 
 const displayCardDetail = (card) => {
     const cardDetailsBox = document.getElementById("card-details");
@@ -130,7 +124,6 @@ const displayCardByCategories = (cards) => {
     // console.log(cards);
     const cardContainer = document.getElementById("card-container");
     cardContainer.innerHTML = "";
-
 
     cards.forEach(card =>{
         //  console.log(card);
@@ -175,16 +168,10 @@ const loadAllPlants = () => {
 };
 
 
-
-
-
 // Display categories in sidebar
 const displayAllCategories = (categories) => {
     const categoriesContainer = document.getElementById("categories-container");
     categoriesContainer.innerHTML = ""; // clear old items
-
-
-
 
         // Add "All Trees" as the first tab
     const allTrees = document.createElement("li");
@@ -226,8 +213,6 @@ const displayAllCategories = (categories) => {
         });
     });
 };
-
-
 
 // Cart data store
 let cart = [];
@@ -288,7 +273,6 @@ function removeFromCart(id) {
     cart = cart.filter(item => item.id !== id);
     renderCart();
 }
-
 
 loadAllCategories();
 
