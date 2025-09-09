@@ -60,7 +60,7 @@ console.log(country); // Bangladesh
 
 **2) What is the difference between map(), forEach(), and filter()?**
 
-`map()` কী?
+map() কী?
 
 জাভাস্ক্রিপ্টে `map()` ফাংশন হলো একটি অ্যারে মেথড যা মূল অ্যারের প্রতিটি উপাদানের উপর একটি নির্দিষ্ট ফাংশন প্রয়োগ করে একটি নতুন অ্যারে তৈরি করে, যেখানে প্রতিটি উপাদানের ফলাফল জমা হয়। `map()` মূল অ্যারেটিকে অপরিবর্তিত রাখে এবং একটি নতুন অ্যারে রিটার্ন করে। এটি ডেটা রূপান্তর, যেমন প্রতিটি সংখ্যার দ্বিগুণ করা বা প্রতিটি শব্দের ছোট হাতের অক্ষরে পরিবর্তন করা, এর জন্য ব্যবহৃত হয়।  
 
@@ -88,7 +88,9 @@ filter() সবসময় নতুন array return করে।
 
 যদি কোনো element শর্ত পূরণ না করে, তবে খালি array ([]) রিটার্ন হবে।
 
-….…..…………….
+
+================================================================================
+
 
 **3) What are arrow functions in ES6?**
 
@@ -100,7 +102,9 @@ Arrow Function এর বৈশিষ্ট্য
 1. ছোট সিনট্যাক্স → কম কোড লাগে, পড়তে সহজ।
 2. এক লাইনে লিখলে return লাগবে না।
 
-………………..
+
+========================================================================
+
 
 **4)  does destructuring assignment work in ES6?**
 
@@ -113,9 +117,9 @@ let numbers = [10, 20, 30, 40];
 let [a, b] = numbers;
 console.log(a, b); // 10 20
 
----
 
----
+=======================================================================
+
 
 **5) Explain template literals in ES6. How are they different from string concatenation?**
 
@@ -126,7 +130,7 @@ Example:
 // Template Literal
 let sentence = `My name is ${name} and I am ${age} years old.`;
 
-1. Multi-line Strings (newline সহজে লেখা যায়)
+Multi-line Strings (newline সহজে লেখা যায়)
 
 let poem = `Roses are red, Violets are blue, JavaScript is fun, And so are you.`;
 
