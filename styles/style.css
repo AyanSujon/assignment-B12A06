@@ -1,0 +1,14 @@
+/* Google font: inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Inter font */
+*{
+  font-family: "Inter", sans-serif;
+}
+
+.hero-bg-image{
+  background-image: url(/assets/hero-leaf1.png), url(/assets/hero-leaf2.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom left, bottom right;
+  background-size: 30%, 30%;
+}
