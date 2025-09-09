@@ -214,7 +214,9 @@ const displayAllCategories = (categories) => {
     });
 };
 
-// Cart data store
+
+
+// Cart data store (right side div)
 let cart = [];
 
 // Function to handle Add to Cart
