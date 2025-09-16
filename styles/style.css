@@ -7,7 +7,7 @@
 }
 
 .hero-bg-image{
-  background-image: url(/assets/hero-leaf1.png), url(/assets/hero-leaf2.png);
+  background-image: url(./assets/hero-leaf1.png), url(./assets/hero-leaf2.png);
   background-repeat: no-repeat, no-repeat;
   background-position: bottom left, bottom right;
   background-size: 30%, 30%;
